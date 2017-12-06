@@ -2,44 +2,44 @@ package com.javalanguagezone.interviewtwitter.service.dto;
 
 public class UserInfoDTO {
   //number of tweets, number of followers, number of users following
-  private int numberOfTweets;
-  private int numberOfFollowers;
-  private int numberOfUsersFollowing;
+  private Long numberOfTweets;
+  private Long numberOfFollowers;
+  private Long numberOfUsersFollowing;
 
   public UserInfoDTO() {
   }
 
-  public UserInfoDTO(int numberOfTweets) {
+  public UserInfoDTO(Long numberOfTweets) {
     this.numberOfTweets = numberOfTweets;
   }
 
-  public UserInfoDTO(int numberOfTweets, int numberOfFollowers, int numberOfUsersFollowing) {
+  public UserInfoDTO(long numberOfTweets, long numberOfFollowers, long numberOfUsersFollowing) {
     this.numberOfTweets = numberOfTweets;
     this.numberOfFollowers = numberOfFollowers;
     this.numberOfUsersFollowing = numberOfUsersFollowing;
   }
 
-  public int getNumberOfTweets() {
+  public Long getNumberOfTweets() {
     return numberOfTweets;
   }
 
-  public void setNumberOfTweets(int numberOfTweets) {
+  public void setNumberOfTweets(Long numberOfTweets) {
     this.numberOfTweets = numberOfTweets;
   }
 
-  public int getNumberOfFollowers() {
+  public Long getNumberOfFollowers() {
     return numberOfFollowers;
   }
 
-  public void setNumberOfFollowers(int numberOfFollowers) {
+  public void setNumberOfFollowers(Long numberOfFollowers) {
     this.numberOfFollowers = numberOfFollowers;
   }
 
-  public int getNumberOfUsersFollowing() {
+  public Long getNumberOfUsersFollowing() {
     return numberOfUsersFollowing;
   }
 
-  public void setNumberOfUsersFollowing(int numberOfUsersFollowing) {
+  public void setNumberOfUsersFollowing(Long numberOfUsersFollowing) {
     this.numberOfUsersFollowing = numberOfUsersFollowing;
   }
 }

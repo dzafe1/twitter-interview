@@ -34,32 +34,32 @@ public class InterviewTwitterApplication {
 
     @Override
     public void run(ApplicationArguments args) {
-      User rogerVer = userRepository.save(new User("rogerkver", "Roger","Kver","password"));
-      User andreasAntonopoulos = userRepository.save(new User("aantonop", "Aanton","Op", "password"));
-      User vitalikButerin = userRepository.save(new User("VitalikButerin", "Vitalik","Buterin","password"));
-      User charlieLee = userRepository.save(new User("SatoshiLite", "Satoshi","Lite", "password"));
-      User satoshiNakamoto = userRepository.save(new User("satoshiNakamoto", "Satoshi","Nakamoto", "password"));
-
-      vitalikButerin.addFollowing(satoshiNakamoto, rogerVer);
-      userRepository.save(vitalikButerin);
-
-      rogerVer.addFollowing(satoshiNakamoto, andreasAntonopoulos);
-      userRepository.save(rogerVer);
-
-      andreasAntonopoulos.addFollowing(satoshiNakamoto, rogerVer, vitalikButerin, charlieLee);
-      userRepository.save(andreasAntonopoulos);
-
-      charlieLee.addFollowing(satoshiNakamoto, rogerVer, vitalikButerin);
-      userRepository.save(charlieLee);
-
-      tweetRepository.save(new Tweet("I created Bitcoin!", satoshiNakamoto));
-      tweetRepository.save(new Tweet("I'm an alias", satoshiNakamoto));
-      tweetRepository.save(new Tweet("Bitcoin cash is true Bitcoin!", rogerVer));
-      tweetRepository.save(new Tweet("ETH is all about smart contracts", vitalikButerin));
-      tweetRepository.save(new Tweet("Most of the ICO's will fail", andreasAntonopoulos));
-      tweetRepository.save(new Tweet("Cryptocurrencies are all about disruption", andreasAntonopoulos));
-      tweetRepository.save(new Tweet("Bitcoin mining is based on Proof of Work", andreasAntonopoulos));
-      tweetRepository.save(new Tweet("If Bitcoin is  crypto gold then Litecoin is crypto silver.", charlieLee));
+//      User rogerVer = userRepository.save(new User("rogerkver", "Roger","Kver","password"));
+//      User andreasAntonopoulos = userRepository.save(new User("aantonop", "Aanton","Op", "password"));
+//      User vitalikButerin = userRepository.save(new User("VitalikButerin", "Vitalik","Buterin","password"));
+//      User charlieLee = userRepository.save(new User("SatoshiLite", "Satoshi","Lite", "password"));
+//      User satoshiNakamoto = userRepository.save(new User("satoshiNakamoto", "Satoshi","Nakamoto", "password"));
+//
+//      vitalikButerin.addFollowing(satoshiNakamoto, rogerVer);
+//      userRepository.save(vitalikButerin);
+//
+//      rogerVer.addFollowing(satoshiNakamoto, andreasAntonopoulos);
+//      userRepository.save(rogerVer);
+//
+//      andreasAntonopoulos.addFollowing(satoshiNakamoto, rogerVer, vitalikButerin, charlieLee);
+//      userRepository.save(andreasAntonopoulos);
+//
+//      charlieLee.addFollowing(satoshiNakamoto, rogerVer, vitalikButerin);
+//      userRepository.save(charlieLee);
+//
+//      tweetRepository.save(new Tweet("I created Bitcoin!", satoshiNakamoto));
+//      tweetRepository.save(new Tweet("I'm an alias", satoshiNakamoto));
+//      tweetRepository.save(new Tweet("Bitcoin cash is true Bitcoin!", rogerVer));
+//      tweetRepository.save(new Tweet("ETH is all about smart contracts", vitalikButerin));
+//      tweetRepository.save(new Tweet("Most of the ICO's will fail", andreasAntonopoulos));
+//      tweetRepository.save(new Tweet("Cryptocurrencies are all about disruption", andreasAntonopoulos));
+//      tweetRepository.save(new Tweet("Bitcoin mining is based on Proof of Work", andreasAntonopoulos));
+//      tweetRepository.save(new Tweet("If Bitcoin is  crypto gold then Litecoin is crypto silver.", charlieLee));
     }
   }
 }

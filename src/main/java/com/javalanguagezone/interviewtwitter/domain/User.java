@@ -45,6 +45,8 @@ public class User implements UserDetails {
 
   private String lName;
 
+  @OneToMany(mappedBy = "author")
+  private List<Tweet> tweets;
 
 
   public User(String username, String fName, String lName, String password) {
@@ -104,6 +106,9 @@ public class User implements UserDetails {
   public void setfName(String fName) {
     this.fName = fName;
   }
+  public String getFullName(){
+    return fName + " " + lName;
+  }
 
   public String getlName() {
     return lName;
@@ -113,7 +118,29 @@ public class User implements UserDetails {
     this.lName = lName;
   }
 
+  public List<Tweet> getTweets() {
+    return tweets;
+  }
+
+  public void setTweets(List<Tweet> tweets) {
+    this.tweets = tweets;
+  }
+
+  @Override
+  public String toString() {
+    return "User{" +
+      "id=" + id +
+      ", username='" + username + '\'' +
+      ", password='" + password + '\'' +
+      ", fName='" + fName + '\'' +
+      ", lName='" + lName + '\'' +
+      ", tweets=" + tweets.toString() +
+      '}';
+  }
+
   /*****************GET AND SET**********************/
+
+
 
   public void addFollowing(User... users){
     following.addAll(Arrays.asList(users));

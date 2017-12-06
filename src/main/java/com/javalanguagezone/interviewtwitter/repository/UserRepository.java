@@ -11,8 +11,9 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User, Long> {
   User findOneByUsername(String user);
 
-  @Query("SELECT new com.javalanguagezone.interviewtwitter.service.dto.UserInfoDTO(5) " +
-    "FROM Tweet t " +
+  //numberOfTweets, numberOfFollowers, numberOfUsersFollowing
+  @Query("SELECT new com.javalanguagezone.interviewtwitter.service.dto.UserInfoDTO(count (t.id),count (t.id),count (t.id)) " +
+    "FROM Tweet t  " +
     "WHERE t.author.username=:username")
   List<UserInfoDTO> getUserInfo(@Param("username") String username);
 }
