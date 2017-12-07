@@ -2,9 +2,9 @@ package com.javalanguagezone.interviewtwitter.service.dto;
 
 public class UserInfoDTO {
   //number of tweets, number of followers, number of users following
-  private Long numberOfTweets;
-  private Long numberOfFollowers;
-  private Long numberOfUsersFollowing;
+  private long numberOfTweets;
+  private long numberOfFollowers;
+  private long numberOfUsersFollowing;
 
   public UserInfoDTO() {
   }
@@ -19,23 +19,23 @@ public class UserInfoDTO {
     this.numberOfUsersFollowing = numberOfUsersFollowing;
   }
 
-  public Long getNumberOfTweets() {
+  public long getNumberOfTweets() {
     return numberOfTweets;
   }
 
-  public void setNumberOfTweets(Long numberOfTweets) {
+  public void setNumberOfTweets(long numberOfTweets) {
     this.numberOfTweets = numberOfTweets;
   }
 
-  public Long getNumberOfFollowers() {
+  public long getNumberOfFollowers() {
     return numberOfFollowers;
   }
 
-  public void setNumberOfFollowers(Long numberOfFollowers) {
+  public void setNumberOfFollowers(long numberOfFollowers) {
     this.numberOfFollowers = numberOfFollowers;
   }
 
-  public Long getNumberOfUsersFollowing() {
+  public long getNumberOfUsersFollowing() {
     return numberOfUsersFollowing;
   }
 

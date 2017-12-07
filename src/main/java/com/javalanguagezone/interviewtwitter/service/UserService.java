@@ -56,7 +56,6 @@ public class UserService implements UserDetailsService {
   public UserInfoDTO getUserInfo(String username){
     User user=userRepository.findOneByUsername(username);
     UserInfoDTO userInfoDTO=new UserInfoDTO(user.getTweets().size(),user.getFollowers().size(),user.getFollowing().size());
-   // userInfoDTO=userRepository.getUserInfo(username).get(0);
     return userInfoDTO;
   }
 }

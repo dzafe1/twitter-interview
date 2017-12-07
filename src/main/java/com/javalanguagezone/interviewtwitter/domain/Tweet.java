@@ -28,10 +28,6 @@ public class Tweet {
     this.author = author;
   }
 
-  public boolean isValid() {
-    return author != null && content != null && !content.isEmpty() && content.length() <= TWEET_MAX_LENGTH;
-  }
-
   public Long getId() {
     return id;
   }
@@ -42,6 +38,10 @@ public class Tweet {
 
   public User getAuthor() {
     return author;
+  }
+
+  public boolean isValid() {
+    return author != null && content != null && !content.isEmpty() && content.length() <= TWEET_MAX_LENGTH;
   }
 
   @Override
