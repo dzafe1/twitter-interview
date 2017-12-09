@@ -17,7 +17,7 @@ import static lombok.AccessLevel.PRIVATE;
 @Getter
 @Setter
 @NoArgsConstructor(access = PRIVATE)
-@Table(name = "app_user")
+/*@Table(name = "app_user")*/
 @ToString(exclude = {"following", "followers"})
 @EqualsAndHashCode(exclude = {"following", "followers"})
 public class User implements UserDetails {

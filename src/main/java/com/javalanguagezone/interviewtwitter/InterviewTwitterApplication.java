@@ -34,7 +34,7 @@ public class InterviewTwitterApplication {
 
     @Override
     public void run(ApplicationArguments args) {
-    /*  User rogerVer = userRepository.save(new User("rogerkver", "Roger","Kver","password"));
+      User rogerVer = userRepository.save(new User("rogerkver", "Roger","Kver","password"));
       User andreasAntonopoulos = userRepository.save(new User("aantonop", "Aanton","Op", "password"));
       User vitalikButerin = userRepository.save(new User("VitalikButerin", "Vitalik","Buterin","password"));
       User charlieLee = userRepository.save(new User("SatoshiLite", "Satoshi","Lite", "password"));
@@ -59,7 +59,7 @@ public class InterviewTwitterApplication {
       tweetRepository.save(new Tweet("Most of the ICO's will fail", andreasAntonopoulos));
       tweetRepository.save(new Tweet("Cryptocurrencies are all about disruption", andreasAntonopoulos));
       tweetRepository.save(new Tweet("Bitcoin mining is based on Proof of Work", andreasAntonopoulos));
-      tweetRepository.save(new Tweet("If Bitcoin is  crypto gold then Litecoin is crypto silver.", charlieLee));*/
+      tweetRepository.save(new Tweet("If Bitcoin is  crypto gold then Litecoin is crypto silver.", charlieLee));
     }
   }
 }

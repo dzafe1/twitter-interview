@@ -5,15 +5,18 @@ import com.javalanguagezone.interviewtwitter.service.dto.UserDTO;
 import com.javalanguagezone.interviewtwitter.service.dto.UserInfoDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 import java.util.Collection;
 
 @RestController
+@RequestMapping("api")
 public class UserController {
 
   private UserService userService;
+
 
   public UserController(UserService userService) {
     this.userService = userService;
