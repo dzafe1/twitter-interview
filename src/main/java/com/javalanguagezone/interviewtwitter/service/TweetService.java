@@ -68,9 +68,7 @@ public class TweetService {
       this.username = username;
     }
 
-    public String getUsername() {
-      return username;
-    }
+
   }
 
 

@@ -17,7 +17,6 @@ import static lombok.AccessLevel.PRIVATE;
 @Getter
 @Setter
 @NoArgsConstructor(access = PRIVATE)
-/*@Table(name = "app_user")*/
 @ToString(exclude = {"following", "followers"})
 @EqualsAndHashCode(exclude = {"following", "followers"})
 public class User implements UserDetails {
@@ -159,7 +158,7 @@ public class User implements UserDetails {
     return true;
   }
 
-  @Override
+ /* @Override
   public String toString() {
     return "User{" +
       "id=" + id +
@@ -169,5 +168,5 @@ public class User implements UserDetails {
       ", lName='" + lName + '\'' +
       ", tweets=" + tweets.toString() +
       '}';
-  }
+  }*/
 }
